@@ -1,0 +1,89 @@
+[
+  {
+    "invoice_id": "ORD-2025-101",
+    "customer_name": "Соколов Владимир Петрович",
+    "date": "23.01.2025",
+    "company_name": "ООО 'ЭлектроТехника'",
+    "address": "г. Новосибирск ул. Красный проспект д.77",
+    "phone": "+7-383-555-66-77",
+    "email": "sokolov@electro.ru",
+    "items": [
+      {
+        "product_name": "Источник бесперебойного питания APC 1500VA",
+        "quantity": 2,
+        "price": 22000,
+        "total": 44000
+      },
+      {
+        "product_name": "Стабилизатор напряжения 5кВт",
+        "quantity": 1,
+        "price": 18000,
+        "total": 18000
+      },
+      {
+        "product_name": "Удлинитель сетевой 5м",
+        "quantity": 5,
+        "price": 850,
+        "total": 4250
+      }
+    ],
+    "grand_total": 66250
+  },
+  {
+    "invoice_id": "ORD-2025-102",
+    "customer_name": "Лебедева Ольга Викторовна",
+    "date": "24.01.2025",
+    "company_name": "ИП Лебедева О.В.",
+    "address": "г. Краснодар ул. Красная д.120",
+    "phone": "+7-861-444-55-66",
+    "email": "lebedeva@yandex.ru",
+    "items": [
+      {
+        "product_name": "Кондиционер Daikin 12000 BTU",
+        "quantity": 1,
+        "price": 45000,
+        "total": 45000
+      },
+      {
+        "product_name": "Монтаж и установка",
+        "quantity": 1,
+        "price": 8000,
+        "total": 8000
+      },
+      {
+        "product_name": "Медные трубы 5м",
+        "quantity": 1,
+        "price": 3500,
+        "total": 3500
+      }
+    ],
+    "grand_total": 56500
+  },
+  {
+    "invoice_id": "ORD-2025-103",
+    "customer_name": "Григорьев Андрей Максимович",
+    "date": "25.01.2025",
+    "company_name": "ООО 'АвтоЗапчасти'",
+    "items": [
+      {
+        "product_name": "Моторное масло Shell 5W-40 4л",
+        "quantity": 10,
+        "price": 2200,
+        "total": 22000
+      },
+      {
+        "product_name": "Масляный фильтр Mann",
+        "quantity": 10,
+        "price": 450,
+        "total": 4500
+      },
+      {
+        "product_name": "Воздушный фильтр Bosch",
+        "quantity": 8,
+        "price": 650,
+        "total": 5200
+      }
+    ],
+    "grand_total": 31700
+  }
+]

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'DejaVu Sans', Arial; margin: 25px; font-size: 11px; }
+        .header { background: #333; color: white; padding: 15px; margin-bottom: 20px; }
+        .data { display: flex; justify-content: space-between; margin-bottom: 15px; }
+        table { width: 100%; font-size: 10px; }
+        th { background: #666; color: white; padding: 8px; }
+        td { padding: 6px; border-bottom: 1px solid #ccc; }
+        .footer { margin-top: 20px; text-align: center; font-size: 9px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>ОТЧЁТ ПО ДОКУМЕНТУ {{ invoice_id }}</h2>
+    </div>
+
+    <div class="data">
+        <div><strong>Контрагент:</strong> {{ customer_name }}</div>
+        <div><strong>Дата формирования:</strong> {{ date }}</div>
+    </div>
+
+    <table>
+        <tr><th>Позиция</th><th>Количество</th><th>Стоимость</th></tr>
+        {% for item in items %}
+        <tr><td>{{ item.product_name }}</td><td>{{ item.quantity }}</td><td>{{ item.total }} ₽</td></tr>
+        {% endfor %}
+    </table>
+
+    <div class="footer">
+        <p>Документ сгенерирован автоматически | Итого: {{ grand_total }} ₽</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+invoice_id;customer_name;date;company_name;item_1_name;item_1_qty;item_1_price;item_2_name;item_2_qty;item_2_price
+INV-2025-006;Новиков Дмитрий Олегович;20.01.2025;ИП Новиков;Смартфон Samsung Galaxy S24;1;89000;Защитное стекло;2;1500
+INV-2025-007;Федорова Елена Сергеевна;21.01.2025;ООО "МедиаГрупп";Фотоаппарат Canon EOS R6;1;185000;Объектив Canon RF 24-105mm;1;95000
+INV-2025-008;Волков Сергей Николаевич;22.01.2025;ИП Волков С.Н.;SSD диск Samsung 1TB;3;12000;Внешний HDD Seagate 4TB;1;8500

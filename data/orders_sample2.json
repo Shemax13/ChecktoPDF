@@ -1,0 +1,44 @@
+{
+  "orders": [
+    {
+      "invoice_id": "ORD-2025-104",
+      "customer_name": "Захаров Николай Александрович",
+      "date": "26.01.2025",
+      "items": [
+        {
+          "product_name": "Кофемашина DeLonghi",
+          "quantity": 1,
+          "price": 35000,
+          "total": 35000
+        },
+        {
+          "product_name": "Кофе в зернах 1кг",
+          "quantity": 3,
+          "price": 1800,
+          "total": 5400
+        }
+      ],
+      "grand_total": 40400
+    },
+    {
+      "invoice_id": "ORD-2025-105",
+      "customer_name": "Романова Татьяна Игоревна",
+      "date": "27.01.2025",
+      "items": [
+        {
+          "product_name": "Пылесос Dyson V15",
+          "quantity": 1,
+          "price": 52000,
+          "total": 52000
+        },
+        {
+          "product_name": "Фильтр HEPA для Dyson",
+          "quantity": 2,
+          "price": 2500,
+          "total": 5000
+        }
+      ],
+      "grand_total": 57000
+    }
+  ]
+}

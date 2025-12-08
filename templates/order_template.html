@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @font-face {
+            font-family: 'Roboto';
+            src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+        }
+        body { font-family: 'Roboto', sans-serif; margin: 30px; background: #f9f9f9; }
+        .container { background: white; padding: 40px; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+        h1 { color: #2196F3; border-bottom: 2px solid #2196F3; padding-bottom: 10px; }
+        table { width: 100%; margin-top: 20px; }
+        th { background: #2196F3; color: white; padding: 10px; }
+        td { padding: 10px; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Заказ {{ invoice_id }}</h1>
+        <p><strong>Клиент:</strong> {{ customer_name }}</p>
+        <p><strong>Дата:</strong> {{ date }}</p>
+
+        <table>
+            <tr><th>Товар</th><th>Кол-во</th><th>Цена</th><th>Итого</th></tr>
+            {% for item in items %}
+            <tr>
+                <td>{{ item.product_name }}</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.price }} ₽</td>
+                <td><strong>{{ item.total }} ₽</strong></td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <h2 style="text-align: right; color: #2196F3;">Всего: {{ grand_total }} ₽</h2>
+    </div>
+</body>
+</html>
